@@ -1,0 +1,16 @@
+booklist = [44589,'red and black','mangoo,vegetable','hanan','elon musk',7878]
+print(booklist)
+print(type(booklist))
+print("total len in booklist:",len(booklist))
+for i in booklist:
+    print(i)
+print(booklist[3])
+print(type(booklist)[3])
+booklist.append("abc")
+print(booklist)
+booklist.insert(1 ,44589)
+print(booklist)
+booklist.remove(7878)
+print(booklist)
+booklist.pop(3)
+print(booklist)

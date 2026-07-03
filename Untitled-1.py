@@ -1,4 +1,9 @@
-SET = {"20, 'Jessa' , 35.75 "}
-print(SET)
-d = {'a':10, 'b':20,'c':30, }
-print(d)
+name = ["nokia","vivo","mango","red",]
+print(name)
+print(type(name))
+print("total len in name:",len(name))
+for i in name:
+    print(i)
+mobileinfolist = ["nokow","123","34.9"]
+mobilelenght = float (input("please enter you lenght"))
+mobileinfolist.append(mobilelenght)

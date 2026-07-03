@@ -14,5 +14,3 @@ booklist.remove(50.5)
 print(booklist)
 booklist.pop(3)
 print(booklist)
-
- 
