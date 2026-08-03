@@ -1,0 +1,22 @@
+import numpy as np
+arr1 = np.array([1,2,3,4,5,6]),([7,8,9,0,12])
+print(arr1)
+arr2=np.array([1,2,3,4,5]),([1,2,3,4,5,6])
+print(arr2)
+arr =np.array([1,2,3,4,5])
+print(arr)
+matrix =np.array([1,2,3,4]),([1,2,3,4])
+print(matrix)
+zero =np.array([5,6,7,8,9]),([10,11,12,13,14,15]),([8,2,3,4,5])
+print(zero)
+one =np.array([4,5,6,7,8,9])
+print(one)
+for x in arr:
+    print(x)
+print("total len in zero:",len(zero))
+arr2 = np.array([123,45,55]),([2,444,55,66])
+print(arr2)
+price = np.array ([100000,2000000,3000000])
+area= np.array([3,4,5])
+total = price*area
+print(total)

@@ -1,24 +1,40 @@
 import numpy as np
-arr1 = np.array([1,2,3,4,5,6]),([7,8,9,0,12])
-print(arr1)
-arr2=np.array([1,2,3,4,5]),([1,2,3,4,5,6])
-print(arr2)
-arr =np.array([1,2,3,4,5])
-print(arr)
-matrix =np.array([1,2,3,4]),([1,2,3,4])
-print(matrix)
-zero =np.array([5,6,7,8,9]),([10,11,12,13,14,15]),([8,2,3,4,5])
-print(zero)
-one =np.array([4,5,6,7,8,9])
-print(one)
-for x in arr:
-    print(x)
-print("total len in zero:",len(zero))
-arr2 = np.array([123,45,55]),([2,444,55,66])
-print(arr2)
-price = np.array ([100000,2000000,3000000])
-area= np.array([3,4,5])
-total = price*area
-print(total)
+ids, price , long , lat = np.genfromtxt('RealEstate-USA.csv', delimiter=',', usecols=(0,4,8,9), unpack=True, dtype=None,skip_header=1,invalid_raise=False,)
+
+print(ids)
+print(price)
+print(long)
+print(lat)
+
+print("moblieprice mean:" ,np.mean(price))
+print("bookprice average:",np.average(price))
+print("zameen.com price std:",np.std(price))
+print("Real state usa price mod:",np.median(price))
+print("zameen.com price precentile - 25:" ,np.percentile(price, 25))
+print("book state usa price precentile - 42:", np.percentile(price,42))
+print("atomic book price precentile - 56:" , np.percentile(price , 56))
+print("zameen.com price min:",np.min(price))
+print("zameen.com price max:",np.max(price))
+
+#zameen .com price math - opreation
+print("ali baba.com price square:",np.square(price))
+print("real state usa price squrt:",np.sqrt(price))
+print("zameen.com price pow:",np.power(price,34))
+print("hamza moblie.com price abs:",np.abs(price))
+
+addition =long + lat
+subtraction = long - lat
+multiplication = long * lat
+division = long / lat
+print("real state usa lon - lat -adtition:",addition)
+print("zameen .com lon - lat - subtraction:",subtraction)
+print("moblie name lon -lat-multipication:",multiplication)
+print("zameen.com lon-lat - division:",division)
+
+
+
+
+
+
 
 
