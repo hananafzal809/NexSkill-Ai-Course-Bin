@@ -28,12 +28,3 @@ g.figure.suptitle("sns.kdepolt(data=dffiler,x=price,y=zip_code)")
 g.figure.show()
 read=input("wait for me.....")
 
-
-
-
-
-
-
-
-
-
