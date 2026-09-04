@@ -27,4 +27,3 @@ g = sns.kdeplot(data=dffilter, x="price",y="zip_code")
 g.figure.suptitle("sns.kdepolt(data=dffiler,x=price,y=zip_code)")
 g.figure.show()
 read=input("wait for me.....")
-

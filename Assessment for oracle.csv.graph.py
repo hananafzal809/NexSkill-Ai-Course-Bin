@@ -1,0 +1,42 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+df = pd.read_csv('oracle.csv')
+
+df['Date'] = pd.to_datetime(df['Date'])
+sns.set_style("whitegrid")
+plt.rcParams['figure.figsize'] = (12, 6)
+
+plt.figure()
+plt.plot(df['Date'], df['Close'], color='blue')
+plt.title('Oracle Stock - Close Price')
+plt.xlabel('Date')
+plt.ylabel('Close Price $')
+plt.show()
+plt.figure()
+plt.plot(df['Date'], df['Open'], label='Open', alpha=0.7)
+plt.plot(df['Date'], df['Close'], label='Close', alpha=0.7)
+plt.title('Oracle Stock - Open vs Close')
+plt.xlabel('Date')
+plt.ylabel('Price $')
+plt.legend()
+plt.show()
+plt.figure()
+plt.bar(df['Date'], df['Volume'], color='orange')
+plt.title('Oracle Stock - Trading Volume')
+plt.xlabel('Date')
+plt.ylabel('Volume')
+plt.show()
+
+plt.fill_between(df['Date'], df['Low'], df['High'], color='green', alpha=0.3)
+plt.plot(df['Date'], df['Close'], color='red', label='Close')
+plt.title('Oracle Stock - High Low Range')
+plt.xlabel('Date')
+plt.ylabel('Price $')
+plt.legend()
+plt.show()
+plt.figure(figsize=(8,6))
+sns.heatmap(df[['Open','High','Low','Close','Volume']].corr(), annot=True, cmap='coolwarm')
+plt.title('Columns Correlation Heatmap')
+plt.show()
